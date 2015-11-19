@@ -16,7 +16,7 @@ describe LogStash::Filters::Csv do
 
     sample("call" => "Marco", "response" => "polo") do
       expect(subject).to include("csv_output")
-      expect(subject['csv_output']).to eq("Marco,polo\n")
+      expect(subject['csv_output']).to eq("Marco,polo")
     end
   end
 end

@@ -38,7 +38,7 @@ class LogStash::Filters::Csv < LogStash::Filters::Base
     @logger.debug? and @logger.debug("Running csv filter", :event => event)
     src_data = []
     @src_fields.each do |field| src_data << event[field] end
-    event[@dst_field] = src_data.to_csv
+    event[@dst_field] = src_data.to_csv.strip
     filter_matched(event)
 
     @logger.debug? and @logger.debug("Event now: ", :event => event)
