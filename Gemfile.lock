@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     logstash-filter-csv (0.0.1)
-      logstash-core (>= 2.0.0, < 3.0.0)
+      logstash-core (>= 2.0.0, < 7.0.0)
 
 GEM
   remote: https://rubygems.org/
